@@ -9,26 +9,9 @@ import {
 import { auth, db } from "../firebase-config";
 import { useNavigate } from "react-router-dom";
 import swal from "sweetalert";
-import { setDoc, collection, addDoc } from "@firebase/firestore";
+import { setDoc, doc } from "@firebase/firestore";
 
 const SignUp = () => {
-  // Usuario actual
-  //const auth = getAuth();
-
-  /*onAuthStateChanged(auth, (user) => {
-    if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/firebase.User
-      const userId = user.uid;
-      const email = user.email;
-      const docRef = doc(db, "users", userId);
-      // ...
-    } else {
-      // User is signed out
-      // ...
-    }
-  });
-  */
 
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
@@ -45,16 +28,12 @@ const SignUp = () => {
     }
   });
 
-  const register = () => {
-    createUserWithEmailAndPassword(auth, email, password)
-      .then(() => {
-        return addDoc(collection(db, "users"), {
-          Nombre: nombre,
-          Email: email,
-          Pass: password,
-        });
-      })
-      .catch((error) => alert(error.message));
+  const register = async () => {
+    await createUserWithEmailAndPassword(auth, email, password);
+    await setDoc(doc(db,"users",auth.currentUser.uid),{
+      Nombre: nombre
+    }
+    ).catch((error) => alert(error.message));
     swal({
       title: "¡Bienvenido(a)!",
       text: "Inicio de sesión correcto",

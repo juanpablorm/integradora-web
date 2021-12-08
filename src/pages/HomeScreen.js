@@ -11,8 +11,6 @@ import {
 import Img1 from "../assets/home.jpg";
 import "../css/HomeScreen.css";
 import "./SignUp";
-import { auth } from "../firebase-config";
-import { signOut } from "@firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import carou1 from "../assets/carou4.jpg";
@@ -21,8 +19,11 @@ import carou3 from "../assets/carou9.jpg";
 import card1 from "../assets/DevCard.png";
 import card2 from "../assets/game1.jpg";
 import card3 from "../assets/WEB_MOV.jpg";
+import { doc, getDoc } from "@firebase/firestore";
+import { auth, db } from "../firebase-config";
 
 const HomeScreen = () => {
+
   return (
     <>
       <Container fluid="lg">
@@ -60,7 +61,7 @@ const HomeScreen = () => {
         </Carousel>
 
         <div className="espacio"></div>
-        <h1 className="flexbox">Bienvenido a DevanceSoft</h1>
+        <h1 className="flexbox">Bienvenido a DevanceSoft </h1>
 
         <CardGroup>
           <Card>
@@ -100,7 +101,7 @@ const HomeScreen = () => {
                 materia! Atrevete a descubrir una de las mejores formas de
                 trabajo...
               </Card.Text>
-              <Button href="/curso" className="CardButton">
+              <Button href="/" className="CardButton">
                 Conoce más
               </Button>
             </Card.Body>

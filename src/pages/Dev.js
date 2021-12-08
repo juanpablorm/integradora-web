@@ -172,8 +172,8 @@ const Dev = () => {
                 <br />
                 <br />
                 <div className="DevOS">
-                  <img src={android} style={{ width: 150, height: 100 }} />
-                  <img src={ios} style={{ width: 100, height: 100 }} />
+                  <img src={android} style={{ width: 150, height: 100 }} alt="androidlogo"/>
+                  <img src={ios} style={{ width: 100, height: 100 }} alt="applelogo"/>
                 </div>
               </Card.Text>
             </Card.Body>
@@ -188,36 +188,36 @@ const Dev = () => {
               <Card.Text>
                 <div className="DevDesc1">
                   <Button className="Devbtn" onClick={alertHTML}>
-                    <img src={html} style={{ height: 80, width: 80 }} />
+                    <img src={html} style={{ height: 80, width: 80 }} alt="html_logo" />
                   </Button>
                   <Button className="Devbtn" onClick={alertCSS}>
-                    <img src={css} style={{ height: 80, width: 160 }} />
+                    <img src={css} style={{ height: 80, width: 160 }} alt="css_logo" />
                   </Button>
                   <Button className="Devbtn" onClick={alertJS}>
-                    <img src={js} style={{ height: 80, width: 80 }} />
+                    <img src={js} style={{ height: 80, width: 80 }} alt="Js_logo" />
                   </Button>
                   <Button className="Devbtn" onClick={alertReact}>
                     <img
                       src={react}
-                      style={{ height: 80, width: 80, marginLeft: 22 }}
+                      style={{ height: 80, width: 80, marginLeft: 22 }} alt="React_logo"
                     />
                   </Button>
                   <Button className="Devbtn" onClick={alertAS}>
                     <img
                       src={androids}
-                      style={{ height: 80, width: 80, marginLeft: 25 }}
+                      style={{ height: 80, width: 80, marginLeft: 25 }} alt="AS_logo"
                     />
                   </Button>
                   <Button className="Devbtn" onClick={alertVS}>
                     <img
                       src={vs}
-                      style={{ height: 80, width: 160, marginLeft: 0 }}
+                      style={{ height: 80, width: 160, marginLeft: 0 }} alt="VS_logo"
                     />
                   </Button>
                   <Button className="Devbtn" onClick={alertFire}>
                     <img
                       src={fire}
-                      style={{ height: 100, width: 260, marginLeft: 0 }}
+                      style={{ height: 100, width: 260, marginLeft: 0 }} alt="firebase_logo"
                     />
                   </Button>
                 </div>

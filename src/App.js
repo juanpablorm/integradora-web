@@ -7,11 +7,11 @@ import HomeScreen from "./pages/HomeScreen";
 import Games from "./pages/Games";
 import { auth } from "./firebase-config";
 import Footer from "./pages/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { onAuthStateChanged } from "@firebase/auth";
 import Logout from "./pages/Logout";
 import Dev from "./pages/Dev";
-import Curso from "./pages/Curso";
+import OneSignal from 'react-onesignal';
 
 
 function App() {
@@ -21,6 +21,9 @@ function App() {
     setUser(currentUser);
   });
 
+  useEffect(()=>{
+      OneSignal.init({appId: 'ab823725-65e6-4473-b36f-53769b127239'})
+  });
 
 
   return (
@@ -40,7 +43,6 @@ function App() {
               <Route path="/home" element={<HomeScreen />}></Route>
               <Route path="/games" element={<Games />}></Route>
               <Route path="/dev" element={<Dev />}></Route>
-              <Route path="/curso" element={<Curso />}></Route>
             </>
         }
         <Route path="/logout" element={<Logout />}></Route>
