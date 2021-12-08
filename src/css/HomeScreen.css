@@ -1,0 +1,13 @@
+.flexbox {
+    align-items: center;
+    font-size: 25px;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 100%;
+    background: #212529;
+    color: #fff;
+  }
+  .espacio {
+    padding-top: 10px;
+  }
