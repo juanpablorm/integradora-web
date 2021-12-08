@@ -1,21 +1,17 @@
 import {
   Container,
-  Row,
-  Col,
-  Image,
   Button,
-  Carousel,
   Card,
   CardGroup,
 } from "react-bootstrap";
 import "../css/Games.css";
 import "./SignUp";
-import { auth } from "../firebase-config";
-import { signOut } from "@firebase/auth";
-import { Link, useNavigate } from "react-router-dom";
-import swal from "sweetalert";
-import carou1 from "../assets/carou4.jpg";
-import carou2 from "../assets/carou8.jpg";
+// import { auth } from "../firebase-config";
+// import { signOut } from "@firebase/auth";
+// import { Link, useNavigate } from "react-router-dom";
+// import swal from "sweetalert";
+// import carou1 from "../assets/carou4.jpg";
+// import carou2 from "../assets/carou8.jpg";
 import carou3 from "../assets/game3.jpg";
 import card1 from "../assets/game2.jpg";
 import card2 from "../assets/dgames.mp4";
@@ -27,7 +23,7 @@ const Games = () => {
       <Container>
         <br />
         <Card className="kk">
-          <iframe src={card2} width="100%" height="400px"></iframe>
+          <iframe src={card2} width="100%" height="400px"/>
           <Card.Body>
             <CardGroup>
               <Card className="kk2">

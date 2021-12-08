@@ -1,6 +1,7 @@
 {
   "name": "integradoraiii_web",
   "version": "0.1.0",
+  "homepage": "https://ivansr.devancesoft.com/",
   "private": true,
   "dependencies": {
     "@mui/material": "^5.2.1",
@@ -13,6 +14,7 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.2",
+    "react-onesignal": "^2.0.2",
     "react-router": "^6.0.2",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
