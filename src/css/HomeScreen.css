@@ -5,9 +5,23 @@
     height: 100px;
     justify-content: center;
     width: 100%;
-    background: #212529;
+    background: #222831;
     color: #fff;
   }
   .espacio {
     padding-top: 10px;
   }
+
+#root {
+  background-color: #393E46;
+}
+
+.CardBody {
+  background-color: #EEEEEE;
+  color: #000000;
+}
+
+.CardButton {
+  background-color: #00ADB5;
+  border: #864879;
+}

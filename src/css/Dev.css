@@ -1,0 +1,56 @@
+.body {
+    background-image: url(../assets/test.gif);
+    background-repeat:repeat-x;
+}
+
+.DevCG {
+    background-color: rgba(128, 128, 128, .8);
+    color: #fff;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.DevC {
+    background-color: transparent;
+    
+}
+
+.DevCT{
+    font-weight: 700;
+}
+
+.DevCT2{
+    font-weight: 700;
+    background-color: rgba(128, 128, 128, .6);
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    height: 100px;
+}
+
+.DevOS {
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.DevDesc {
+    height: 100px;
+    background-color: rgba(128, 128, 128, .6);
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    font-size:xx-large;
+    font-weight: bold;
+}
+
+.Devbtn {
+    background-color: transparent;
+    border: transparent;
+}
+
+.Devbtn:hover {
+    background-color: rgba(128, 128, 128, .6);
+}
+
