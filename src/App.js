@@ -11,6 +11,8 @@ import { useState, useEffect } from "react";
 import { onAuthStateChanged } from "@firebase/auth";
 import Logout from "./pages/Logout";
 import Dev from "./pages/Dev";
+import Curso from "./pages/Curso";
+import Consulta from "./pages/Consulta";
 import OneSignal from 'react-onesignal';
 
 
@@ -43,6 +45,8 @@ function App() {
               <Route path="/home" element={<HomeScreen />}></Route>
               <Route path="/games" element={<Games />}></Route>
               <Route path="/dev" element={<Dev />}></Route>
+              <Route path="/curso" element={<Curso />}></Route>
+              <Route path="/consulta" element={<Consulta />}></Route>
             </>
         }
         <Route path="/logout" element={<Logout />}></Route>

@@ -6,7 +6,7 @@ function Footer() {
     <footer className="bg-light text-center text-lg-start">
       <div id="futer" class="text-center p-3">
         © 2021 Copyright/
-        <a class="text-light" href="https://mdbootstrap.com/">
+        <a class="text-light" href="/home">
           Devancesoft.com
         </a>
       </div>
