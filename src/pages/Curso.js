@@ -26,7 +26,7 @@ const Curso = () => {
       <div className="fondo">
         <Row>
           <Col className="col-sm-12" xs={12}>
-            <iframe src={card2} width="100%" height="600px"></iframe>
+            <iframe width="100%" height="600px" src="https://www.youtube.com/embed/gX6-px8bmLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <Card border="light">
               <h2 className="titulito2">Descripción General</h2>
               <Card.Body>
@@ -51,7 +51,7 @@ const Curso = () => {
                       className="me-2"
                       aria-label="Buscar"
                     />
-                    <Button variant="outline-primary">Search</Button>
+                    <Button variant="outline-danger">Search</Button>
                   </Form>
                   <br />
                   <Card>
@@ -77,7 +77,7 @@ const Curso = () => {
                     />
                   </FloatingLabel>
                   <div className="espacio"></div>
-                  <Button variant="primary" type="submit">
+                  <Button variant="primary" type="submit" className="SButton">
                     Subir
                   </Button>
                 </Card.Text>

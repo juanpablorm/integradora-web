@@ -22,7 +22,12 @@
 }
 
 .CardButton {
-  background-color: #00ADB5;
+  background-color: #C03535;
+  border: #864879;
+}
+
+.SButton {
+  background-color: #C03535;
   border: #864879;
 }
 .flexbox1 {
@@ -57,4 +62,15 @@
 .noborder{
   border: 0;
   border-radius: 0;
+}
+
+.colo {
+  height: 210px;
+}
+
+.noborder1{
+  border: 0;
+  border-radius: 0;
+  background-color: rgb(0,0,0,0.05);
+  color: #fff;
 }

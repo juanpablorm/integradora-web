@@ -7,6 +7,7 @@ import {
   Carousel,
   Card,
   CardGroup,
+  Form
 } from "react-bootstrap";
 import Img1 from "../assets/home.jpg";
 import "../css/HomeScreen.css";
@@ -19,10 +20,13 @@ import carou3 from "../assets/carou9.jpg";
 import card1 from "../assets/DevCard.png";
 import card2 from "../assets/game1.jpg";
 import card3 from "../assets/WEB_MOV.jpg";
+import cont from "../assets/contact.jpg";
 import { doc, getDoc } from "@firebase/firestore";
 import { auth, db } from "../firebase-config";
 
 const HomeScreen = () => {
+
+  
 
   return (
     <>
@@ -65,7 +69,7 @@ const HomeScreen = () => {
 
         <CardGroup>
           <Card className="noborder">
-            <Card.Img variant="top" src={card1} className="noborder"/>
+            <Card.Img variant="top" src={card1} className="noborder" />
             <Card.Body className="CardBody">
               <Card.Title>Desarrollo Web/Móvil</Card.Title>
               <Card.Text>
@@ -79,7 +83,7 @@ const HomeScreen = () => {
             </Card.Body>
           </Card>
           <Card className="noborder">
-            <Card.Img variant="top" src={card2} className="noborder"/>
+            <Card.Img variant="top" src={card2} className="noborder" />
             <Card.Body className="CardBody">
               <Card.Title>Creación de Videojuegos</Card.Title>
               <Card.Text>
@@ -93,7 +97,7 @@ const HomeScreen = () => {
             </Card.Body>
           </Card>
           <Card className="noborder">
-            <Card.Img variant="top" src={card3} className="noborder"/>
+            <Card.Img variant="top" src={card3} className="noborder" />
             <Card.Body className="CardBody">
               <Card.Title>Curso de Metodología ágil</Card.Title>
               <Card.Text>
@@ -107,6 +111,32 @@ const HomeScreen = () => {
             </Card.Body>
           </Card>
         </CardGroup>
+        <div className="espacio"></div>
+        <br/>
+        <CardGroup>
+          <Card className="noborder1">
+            <Card.Img variant="top" src={cont} className="noborder1" />
+          </Card>
+          <Card className="noborder1">
+            <Card.Body className="CardBody" className="noborder1">
+              <Card.Title>Contactanos para aclarar tus dudas</Card.Title>
+              <Form action="mailto:juanpa-emdm@hotmail.com" method="post" enctype="multipart/form-data">
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                  <Form.Label>Correo</Form.Label>
+                  <Form.Control type="email" placeholder="nombre@ejemplo.com" required/>
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" required>
+                  <Form.Label>Mensaje</Form.Label>
+                  <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+                <Button className="CardButton">
+                Enviar
+              </Button>
+              </Form>
+            </Card.Body>
+          </Card>
+        </CardGroup>
+        <br/>
         <div className="espacio"></div>
         <Card className="noborder">
           <Card.Body>
@@ -128,8 +158,8 @@ const HomeScreen = () => {
                   </Card.Text>
                 </Card.Body>
                 <Button href="/consulta" variant="danger">
-                Consultar
-              </Button>
+                  Consultar
+                </Button>
               </Card>
               <Card border="light">
                 <Card.Body>
@@ -147,8 +177,8 @@ const HomeScreen = () => {
                   <Card.Title>Desde los $500 USD</Card.Title>
                 </Card.Body>
                 <Button href="/consulta" variant="warning">
-                Consultar
-              </Button>
+                  Consultar
+                </Button>
               </Card>
               <Card border="light">
                 <Card.Body>
@@ -166,8 +196,8 @@ const HomeScreen = () => {
                   <Card.Title>Costo $100 USD</Card.Title>
                 </Card.Body>
                 <Button href="/games" variant="primary">
-                Iniciar
-              </Button>
+                  Iniciar
+                </Button>
               </Card>
               <Card border="light">
                 <Card.Body>
@@ -184,8 +214,8 @@ const HomeScreen = () => {
                   <Card.Title>Costo $100 USD</Card.Title>
                 </Card.Body>
                 <Button href="/curso" variant="success">
-                Iniciar
-              </Button>
+                  Iniciar
+                </Button>
               </Card>
             </CardGroup>
           </Card.Body>
