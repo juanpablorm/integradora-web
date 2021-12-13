@@ -17,7 +17,7 @@ const Navbar1 = () => {
     <>
       <Navbar className="Navbar" expand="lg" variant="dark" sticky="top">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/home">
             <img
               src={icon}
               width="30"

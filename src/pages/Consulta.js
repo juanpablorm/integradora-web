@@ -21,10 +21,12 @@ import { signOut } from "@firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import card2 from "../assets/dgames.mp4";
 import card3 from "../assets/WEB_MOV.jpg";
-
+import OneSignal from 'react-onesignal';
+import { onAuthStateChanged } from "@firebase/auth";
 
 const Consulta = () => {
 
+ 
   const [money, setMoney] = useState({});
 
   let money1 = 0;
@@ -44,23 +46,23 @@ const Consulta = () => {
     }
 
   return (
+    
     <Container>
-      <br />
-      <br />
-      <br />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <Card>
-        <Card.Header>Featured</Card.Header>
+        <Container>
+        <Card.Header>Consulta</Card.Header>
         <Card.Body>
           <Form>
-            <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-              <Form.Label column sm="2">
-                Email
-              </Form.Label>
-              <Col sm="10">
-                <Form.Control plaintext readOnly defaultValue="email@example.com" />
-              </Col>
-            </Form.Group>
-
             <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
               <Form.Label column sm="2">
                 Contraseña
@@ -84,13 +86,21 @@ const Consulta = () => {
          
           </Form>
         </Card.Body>
-        
+        </Container>
       </Card>
-      <br />
-      <br />
-      <br />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </Container>
-
+    
   );
 };
 
