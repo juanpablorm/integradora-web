@@ -64,8 +64,8 @@ const HomeScreen = () => {
         <h1 className="flexbox">Bienvenido a DevanceSoft </h1>
 
         <CardGroup>
-          <Card>
-            <Card.Img variant="top" src={card1} />
+          <Card className="noborder">
+            <Card.Img variant="top" src={card1} className="noborder"/>
             <Card.Body className="CardBody">
               <Card.Title>Desarrollo Web/Móvil</Card.Title>
               <Card.Text>
@@ -78,8 +78,8 @@ const HomeScreen = () => {
               </Button>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Img variant="top" src={card2} />
+          <Card className="noborder">
+            <Card.Img variant="top" src={card2} className="noborder"/>
             <Card.Body className="CardBody">
               <Card.Title>Creación de Videojuegos</Card.Title>
               <Card.Text>
@@ -92,8 +92,8 @@ const HomeScreen = () => {
               </Button>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Img variant="top" src={card3} />
+          <Card className="noborder">
+            <Card.Img variant="top" src={card3} className="noborder"/>
             <Card.Body className="CardBody">
               <Card.Title>Curso de Metodología ágil</Card.Title>
               <Card.Text>
@@ -101,12 +101,95 @@ const HomeScreen = () => {
                 materia! Atrevete a descubrir una de las mejores formas de
                 trabajo...
               </Card.Text>
-              <Button href="/" className="CardButton">
+              <Button href="/curso" className="CardButton">
                 Conoce más
               </Button>
             </Card.Body>
           </Card>
         </CardGroup>
+        <div className="espacio"></div>
+        <Card className="noborder">
+          <Card.Body>
+            <h1 className="flexbox1">Conoce más sobre nuestros planes</h1>
+            <CardGroup>
+              <Card border="light">
+                <Card.Body>
+                  <Card.Title id="plan1">Desarrollo Web</Card.Title>
+                  <Card.Text>
+                    <ul>
+
+                      <li type="disc">1 Proyecto</li>
+                      <li type="disc">Diseño responsivo</li>
+                      <li type="disc">Con o sin limites de funcionalidad</li>
+                      <li type="disc">Soporte básico o avanzado</li>
+
+                    </ul>
+                    <Card.Title>Desde los $1000 USD</Card.Title>
+                  </Card.Text>
+                </Card.Body>
+                <Button href="/consulta" variant="danger">
+                Consultar
+              </Button>
+              </Card>
+              <Card border="light">
+                <Card.Body>
+                  <Card.Title id="plan2">Desarrollo Móvil</Card.Title>
+                  <Card.Text>
+                    <ul>
+
+                      <li type="disc">1 Proyecto</li>
+                      <li type="disc">Rendimiento nativo Android/IOS</li>
+                      <li type="disc">Con o sin limites de funcionalidad</li>
+                      <li type="disc">Soporte básico o avanzado</li>
+
+                    </ul>
+                  </Card.Text>
+                  <Card.Title>Desde los $500 USD</Card.Title>
+                </Card.Body>
+                <Button href="/consulta" variant="warning">
+                Consultar
+              </Button>
+              </Card>
+              <Card border="light">
+                <Card.Body>
+                  <Card.Title id="plan3">Curso de Videojuegos</Card.Title>
+                  <Card.Text>
+                    <ul>
+
+                      <li type="disc">Diseño 2D y 3D</li>
+                      <li type="disc">Uso de Blender</li>
+                      <li type="disc">Uso de Unity</li>
+                      <li type="disc">Creación de Scripts Avanzados</li>
+
+                    </ul>
+                  </Card.Text>
+                  <Card.Title>Costo $100 USD</Card.Title>
+                </Card.Body>
+                <Button href="/games" variant="primary">
+                Iniciar
+              </Button>
+              </Card>
+              <Card border="light">
+                <Card.Body>
+                  <Card.Title id="plan4">Curso de Metodologías</Card.Title>
+                  <Card.Text>
+                    <ul>
+
+                      <li type="disc">SCRUM nivel básico a experto</li>
+                      <li type="disc">Capacitación</li>
+                      <li type="disc">Contacto con nuestros expertos</li>
+
+                    </ul>
+                  </Card.Text>
+                  <Card.Title>Costo $100 USD</Card.Title>
+                </Card.Body>
+                <Button href="/curso" variant="success">
+                Iniciar
+              </Button>
+              </Card>
+            </CardGroup>
+          </Card.Body>
+        </Card>
       </Container>
     </>
   );

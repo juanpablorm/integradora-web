@@ -45,14 +45,16 @@ const SignUp = () => {
   };
 
   return (
-    <>
+    <div className="space1">
       <Container>
+        <br/>
+        <br/>
         <CardGroup className="caca">
           <Card border="dark">
             <Card.Img variant="top" src={Img1} />
           </Card>
-          <Card border="dark">
-            <Card.Body className="conte">
+          <Card className="conte">
+            <Card.Body>
               <Card.Title>Registro</Card.Title>
               <Form>
                 <Form.Group className="mb-3" controlId="formBasicName">
@@ -99,8 +101,10 @@ const SignUp = () => {
             </Card.Body>
           </Card>
         </CardGroup>
+        <br/>
+        <br/>
       </Container>
-    </>
+    </div>
   );
 };
 

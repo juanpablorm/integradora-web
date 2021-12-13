@@ -9,7 +9,7 @@
     color: #fff;
   }
   .espacio {
-    padding-top: 10px;
+    padding-top: 7px;
   }
 
 #root {
@@ -24,4 +24,37 @@
 .CardButton {
   background-color: #00ADB5;
   border: #864879;
+}
+.flexbox1 {
+  align-items: center;
+  font-size: 25px;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 100%;
+  background: #222831;
+  color: #fff;
+}
+
+#plan1{
+  color: #BB2D3B;
+  
+}
+
+#plan2{
+  color: #FFCA2C;
+}
+
+#plan3{
+  color: #0B5ED7;
+}
+
+#plan4{
+  color: #157347;
+
+}
+
+.noborder{
+  border: 0;
+  border-radius: 0;
 }

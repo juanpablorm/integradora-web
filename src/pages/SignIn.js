@@ -61,13 +61,15 @@ const SignIn = () => {
   };
 
   return (
-    <>
+    <div className="space">
       <Container>
+        <br/>
+        <br/>
         <CardGroup className="caca">
-          <Card border="dark conte1">
+          <Card className="conte1">
             <Card.Img variant="top" src={Img2} />
           </Card>
-          <Card border="dark">
+          <Card className="conte1">
             <Card.Body className="conte">
               <Card.Title>Inicio de Sesión</Card.Title>
               <Form>
@@ -105,8 +107,11 @@ const SignIn = () => {
             </Card.Body>
           </Card>
         </CardGroup>
+        <br/>
+        <br/>
+        <br/>
       </Container>
-    </>
+    </div>
   );
 };
 
