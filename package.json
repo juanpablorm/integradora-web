@@ -1,7 +1,7 @@
 {
   "name": "integradoraiii_web",
   "version": "0.1.0",
-  "homepage": "https://ivansr.devancesoft.com/",
+  "homepage": "https://www.devancesoft.com/",
   "private": true,
   "dependencies": {
     "@mui/material": "^5.2.1",
